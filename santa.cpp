@@ -71,7 +71,7 @@ int main()
     string gifter;
     string giftee;
     
-    while(cousins_1.size()>1 && cousins_2.size()>1){
+    while(cousins_1.size()>0 && cousins_2.size()>0){
         gifter=cousins_1.at(rand()%cousins_1.size());
         cout<<"Gifter 1: "<<gifter<<endl;
         
