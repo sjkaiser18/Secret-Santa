@@ -16,8 +16,7 @@ int in_family(string value){
     vector <string> b_and_b={"Morgan","Wes"};
     vector <string> tk_and_s={"Justin","Trevor"};
     vector <string> c_and_j={"Avery"};
-    vector <string> kc_and_d={"Koia","Lana"};
-    vector <string> s={"Madison"};
+    vector <string> kc_and_d={"Koia","Lana","Madison"};
     
     auto val_1 = find(p_and_m.begin(), p_and_m.end(), value);
     if(val_1 != p_and_m.end()){
@@ -40,25 +39,12 @@ int in_family(string value){
     if(val_5 != kc_and_d.end()){
         return 5; //kc_and_d
     }
-    auto val_6=std::find(s.begin(), s.end(), value); 
-    if(val_6 != s.end()){
-        return 6; //s
-    }
-    
-    
 }
 
 int main()
 {
     
     srand (time(NULL));
-    
-    // string p_and_m[]={"Sarah","Nathan","Erin"};
-    // string b_and_b[]={"Morgan","Wes"};
-    // string tk_and_s[]={"Justin","Trevor"};
-    // string c_and_j[]={"Avery"};
-    // string kc_and_d[]={"Koia","Lana"};
-    // string s[]={"Madison"};
     
     vector <string> cousins_1={"Sarah","Nathan","Erin","Morgan",
                     "Wes","Justin","Trevor","Avery",
